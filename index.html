@@ -6,34 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desconto na Renda</title>
 
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
     <div id="geral">
         <h3>Desconto nas rendas</h3>
 
-        <p> São insento as pessoas menores de idade e com renda abaixo de R$1700,00 </p>
-        <p> Até R$5000,00 -> 5% </p>
+        <p> São isento as pessoas menores de idade e com renda abaixo de R$1700,00 </p>
+        <p> De R$1701,00 até R$5000,00 -> 5% </p>
         <p> De R$5001,00 até R$8000,00 -> 8% </p>
         <p> De R$8001,00 até R$10000,00 -> 10% </p>
         <p> De R$10001,00 em dia -> 3% </p>
 
         <div id="div-form">
-            <form>
-                <label for="nome"> Nome </label>
+            <form id="formulario-desconto">
+                <label for="nome"> Nome: </label>
                 <input type="text" name="nome" id="nome">
 
-                <label for="idade"> Idade </label>
+                <label for="idade"> Idade: </label>
                 <input type="text" name="idade" id="idade">
 
-                <label for="renda"> Renda </label>
+                <label for="renda"> Renda: </label>
                 <input type="text" name="renda" id="renda">
-
-                <button type="submit"> Adicionar </button>
+                <div>
+                    <button type="submit"> Adicionar </button>
                 <button type="reset"> Limpar </button>
+                </div>
+                
             </form>
         </div>
         <div id="div-lista-pessoas">
-
         </div>
     </div>
 </body>
