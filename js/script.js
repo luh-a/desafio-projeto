@@ -24,5 +24,20 @@ formPessoa.addEventListener('submit', (evt)=>{
     addPessoa(pessoa)
 
     //limpando o formulário
-    formPessoa.requestFullscreen()
+    formPessoa.reset()
 })
+
+//função para crud
+//função para adicionar pessoa
+const addPessoa = (objPessoa) => {
+    //adicionando o objeto no array pessoas, vindo do parâmetro da função
+    pessoas.push(objPessoa)
+}
+
+//função listar pessoas
+const listPessoa = () => {
+    //percorrendo o array com a estrutura de repetição foreach
+    pessoas.forEach((elem, i)=>{
+        divPessoa.innerHTML += `${i + 1} - ${elem.nome} ${elem.idade} R$ ${parseFloat(elem.renda).toFixed(2).replace('.',',')} <br>`
+    })
+}
