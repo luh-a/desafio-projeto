@@ -32,6 +32,8 @@ formPessoa.addEventListener('submit', (evt)=>{
 const addPessoa = (objPessoa) => {
     //adicionando o objeto no array pessoas, vindo do parâmetro da função
     pessoas.push(objPessoa)
+
+    listPessoa()
 }
 
 //função listar pessoas
